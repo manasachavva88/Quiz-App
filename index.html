@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Put Your Knowledge to the Test!</h1>
+    </header>
+    <main class="main1">
+        <section class="featured-quiz" style="flex: 0.6;">
+            <h3>Featured Quiz</h3>
+            <div class="quiz-card">
+                <img src="assets/javascript.png" alt="Featured Quiz" width="100">
+                <h3>JavaScript Quiz</h3>
+                <p>Test your knowledge with our JavaScript quiz.</p>
+                <a href="quiz_questions/quiz.html">Take Now</a>
+            </div>
+            <div class="score_home">
+                <div class="quiz_text"> Want to see scores? </div>
+
+                <a href="quiz_score/quizscore.html#scoreboard" class="proceed mainproceed">Score Board</a>
+            </div>
+        </section>
+        <section style="flex: 1;">
+            <h4 style="margin: 0;">A Detailed Look at What Our Quiz Has in Store</h4>
+            <p class="slide_text">This is a slideshow showcasing the appearance of a quiz, allowing you to navigate
+                through the questions
+                using 'Previous' and 'Next' buttons</p>
+            <div class="slide_main">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide" id="slide">
+
+                            <div class="slide-description" id="slide-description">
+                            </div>
+                            <img alt="Image 1" src="" id="slide-image" class="slide_img" width="300" height="200">
+                        </div>
+                    </div>
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

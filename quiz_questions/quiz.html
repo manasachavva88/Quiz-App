@@ -1,0 +1,61 @@
+<head>
+  <link rel="stylesheet" href="../quiz.css">
+</head>
+
+<body style="background: aliceblue;">
+  <div id="nameblock">
+    <div class="score_n">Please provide your name so that we can display your quiz scores personalized for you.</div>
+    <div>
+      <label for="name">Player Name:</label>
+      <input type="text" id="name" name="username" placeholder="Enter your name">
+      <button type="submit" class="proceed" onclick="onproceed()">Proceed</button>
+    </div>
+  </div>
+
+  <div id="mainblock">
+    <div class="quiz-card1">
+      <div class="quiz-header">
+        Welcome to your quiz
+      </div>
+      <div class="quiz-instructions">
+        Try to answer as many questions as possible before the time runs out.
+      </div>
+      <div class="penalty-info">
+        Be cautious: For each incorrect answer, a penalty of 30 seconds will be deducted from your remaining time.
+      </div>
+    </div>
+    <div class="main">
+      <div class="timerques">
+        <div id="questionnum"></div>
+        <span class="timetext"><span class="timeleft">Time Left </span><span id="js-timeout"
+            class="timer">1:00</span></span>
+      </div>
+
+      <div class="question" id="ques"></div>
+      <div id="line-bar-container">
+        <div id="line-bar"></div>
+      </div>
+      <div class="options" id="opt">
+      </div>
+      <div id="button-container">
+        <button class="submit" id="submit-button" disabled>Submit</button>
+        <button class="completequiz" id="complete-button" onclick="completeQuiz()">Complete Quiz</button>
+      </div>
+    </div>
+
+    <div id="timeupcard" class="timeupblock">
+      <div class="quiz-header" style="color: black;">
+        The allocated time has expired !!
+      </div>
+      <div class="quiz-instructions">
+        <p>You were not able to complete the task before the allocated time.</p>
+        <p>Try Again using below button.</p>
+      </div>
+      <div>
+        <button class="tryagain" id="redo" onclick="tryagain()">Try Again</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="quiz.js"></script>
+</body>
