@@ -51,7 +51,7 @@ messages.forEach((message, index) => {
 
 main.appendChild(create);
 
-if (currentURL.includes("quizscore.html#scoreboard")) {
+if (currentURL.includes("#scoreboard")) {
   document.getElementById("scoreboard").style.display = "block";
   document.getElementById("scorecal").style.display = "none";
   onproceed();
